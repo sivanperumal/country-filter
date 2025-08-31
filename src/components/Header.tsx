@@ -26,7 +26,15 @@ const Header: React.FC = () => {
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse className="justify-content-end">
         <Nav>
-          {["All", "Asia", "Europe"].map((region) => (
+          {[
+            "All",
+            "Africa",
+            "Americas",
+            "Asia",
+            "Europe",
+            "Oceania",
+            "Polar",
+          ].map((region) => (
             <Nav.Link
               key={region}
               active={selectedRegion === region}
