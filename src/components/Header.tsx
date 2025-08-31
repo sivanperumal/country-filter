@@ -21,7 +21,7 @@ const Header: React.FC = () => {
     navigate("/");
   };
   return (
-    <Navbar bg="transparent" expand="lg" className="mb-4 country-navbar">
+    <Navbar bg="transparent" expand="lg" className="country-navbar">
       <Navbar.Brand>Countries</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse className="justify-content-end">

@@ -6,7 +6,7 @@ import { Outlet } from "react-router";
 
 const MainLayout: React.FC = () => {
   return (
-    <Container>
+    <Container className="px-4 px-md-0">
       <Header />
       <Outlet />
       <Footer />

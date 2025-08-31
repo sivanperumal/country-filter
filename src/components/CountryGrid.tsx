@@ -25,7 +25,9 @@ const CountryGrid: React.FC<countryListProps> = (props) => {
                       <Card.Img
                         src={country.flag}
                         alt={country.name}
-                        style={{ height: "60px", objectFit: "cover" }}
+                        style={{
+                          objectFit: "cover",
+                        }}
                       />
                     </Col>
                     <Col xs={9}>

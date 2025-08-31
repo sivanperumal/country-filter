@@ -56,7 +56,7 @@ const SignIn: React.FC = () => {
   }, [navigate, user]);
 
   return (
-    <Container className="d-flex vh-100">
+    <Container className="d-flex vh-100 px-4 px-md-0">
       <Row className="m-auto w-100 align-items-center loginpage-row">
         <Col xs={12} md={6} className="p-4">
           <div className="mw-70 signin-form-wrapper">

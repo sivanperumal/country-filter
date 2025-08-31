@@ -6,8 +6,8 @@ import FrameIcon from "./../assets/frame-icon.png";
 const HomeBanner: React.FC = () => {
   const { countries } = useCountriesList();
   return (
-    <Row className="mb-4 homebanner-row">
-      <Col md={9} xs={12}>
+    <Row className="homebanner-row flex-column-reverse flex-md-row">
+      <Col md={9} xs={12} className="mt-3 mt-md-0">
         <Carousel>
           {countries.slice(0, 5).map((country) => (
             <Carousel.Item
@@ -16,7 +16,6 @@ const HomeBanner: React.FC = () => {
                 backgroundColor: "#F0F0F0",
                 border: "2px solid #3D3D3D",
                 borderRadius: "2px",
-                height: "480px",
                 textAlign: "center",
               }}
             >
@@ -38,10 +37,10 @@ const HomeBanner: React.FC = () => {
           ))}
         </Carousel>
       </Col>
-      {/* Right Frame (hidden on mobile) */}
-      <Col md={3} className="d-none d-md-block">
+      {/* Right Frame */}
+      <Col md={3} xs={12}>
         <div
-          className="h-100 d-flex align-items-center justify-content-center"
+          className="d-flex align-items-center justify-content-center right-frame"
           style={{
             backgroundColor: "#F0F0F0",
             border: "2px solid #3D3D3D",
@@ -53,14 +52,7 @@ const HomeBanner: React.FC = () => {
             className="d-flex justify-content-center align-items-center"
             style={{ height: "100%" }}
           >
-            <img
-              src={FrameIcon}
-              style={{
-                width: "120px",
-                height: "120px",
-                borderRadius: "16px",
-              }}
-            />
+            <img src={FrameIcon} />
           </div>
         </div>
       </Col>

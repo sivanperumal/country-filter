@@ -25,7 +25,7 @@ const Home: React.FC = () => {
   }, [dispatch]);
   return (
     <>
-      <h2 className="text-center fw-bold mx-3 m-0 welcome-title">WELCOME</h2>
+      <h2 className="text-center fw-bold m-0 welcome-title">WELCOME</h2>
       <HomeBanner />
 
       <CountryGrid countries={visibleCountries} />
